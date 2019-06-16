@@ -9,4 +9,5 @@ emoji_pattern = re.compile("["
 
 
 def de_emoji(text):
-    emoji_pattern.sub(r'', text)
+    text = emoji_pattern.sub(r'', text)
+    return text
